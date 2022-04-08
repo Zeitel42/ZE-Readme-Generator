@@ -1,9 +1,9 @@
 
-  # The Balls 
+  # This Project 
 
 
   ## Purpose
-  Its all the balls 
+  Not today 
 
 
   ## Table of Contents 
@@ -13,23 +13,23 @@
   toc
   
   ## Installation
-  With great care 
-
+  with great intent 
 
   ## Usage
-  Planting seeds 
-
+  save the world 
 
   ## License
   This is where the license will go
 
   ## Contributions
-  Tom, Dick, Harry, and the gang 
-
+  Me, Myself, and Larry 
 
   ## Tests
   whatever this means
 
   ## Questions
-  huh?
   
+  github.com/Zeitel42  
+  
+  For additional information please contact me via email:
+  zaceitel@gmail.com

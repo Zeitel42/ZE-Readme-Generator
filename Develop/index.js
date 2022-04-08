@@ -74,7 +74,34 @@ const questions = () => {
               return false;
             }
           }
-        }       
+        },
+        {
+          type: 'input',
+          name: 'github',
+          message: 'Please enter your github username for the contact section(Required)',
+          validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log("your github?");
+              return false;
+            }
+          }
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: 'Please enter your email for the contact section(Required)',
+          validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log("your email, ok?");
+              return false;
+            }
+          }
+        }
+
     ])
 };
 questions()
