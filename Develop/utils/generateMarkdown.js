@@ -11,6 +11,7 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+
 function generateMarkdown(data) {
   const {title, description, installation, usage, contributors, github, email} = data;
   // console.log(title, link);
@@ -21,32 +22,33 @@ function generateMarkdown(data) {
   ${description} 
 
   ## Table of Contents 
-  this
-  will
-  be the
-  toc
-  
-  ## Installation
+  <a href="#installation">installation</a>
+  <a href="#usage">Usage</a>
+  <a href="#license">License</a>
+  <a href="#contributions">Contributions</a>
+  <a href="#tests">Tests</a>
+  <a href="#questions">Questions</a>
+
+  ## <h2 id="installation">Installation</h2>
   ${installation} 
 
-  ## Usage
+  ## <h2 id="usage">Usage</h2>
   ${usage} 
 
-  ## License
+  ## <h2 id="license">License</h2>
   This is where the license will go
 
-  ## Contributions
+  ## <h2 id="contributions">Contributions</h2>
   ${contributors} 
 
-  ## Tests
+  ## <h2 id="tests">Tests</h2>
   whatever this means
 
-  ## Questions
-  
-  github.com/${github}  
-  
-  For additional information please contact me via email:
-  ${email}
+  ## <h2 id="questions">Questions</h2>
+  For additional information please contact me via email: \n
+  ${email} \n
+  or visit my github page: \n
+  https://github.com/${github}  
 `;
 }
 
