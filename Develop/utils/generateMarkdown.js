@@ -12,7 +12,27 @@ function renderLicenseBadge(license) {
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink;
+  console.log(license);
+  switch (license) {
+    case "Unlicense":
+      licenseLink = "https://unlicense.org/";
+      break;
+    case "LGPL":
+      licenseLink = "https://www.gnu.org/licenses/lgpl-3.0";
+      break;
+    case "MIT":
+      licenseLink = "https://opensource.org/licenses/MIT";
+      break;
+    case "GPL":
+      licenseLink = "https://www.gnu.org/licenses/gpl-3.0";
+      break;
+    default:
+      "";
+  }
+  return licenseLink;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -26,22 +46,22 @@ function generateOther(data) {
     description,
     installation,
     usage,
-    contribution,
+    contributions,
+    testing,
     github,
     email,
     userLicense,
   } = data;
-  let getLicense = userLicense;
 
   return `
-  # ${title} 
+  # **${title}**
 
   ${renderLicenseBadge(userLicense)}
-  
-  ## Purpose
+    
+  ## **Purpose**
   ${description} 
 
-  ## Table of Contents 
+  ## **Table of Contents** 
   <a href="#installation">Installation</a> \n
   <a href="#usage">Usage</a> \n
   <a href="#userLicense">License</a> \n
@@ -49,24 +69,26 @@ function generateOther(data) {
   <a href="#tests">Tests</a> \n
   <a href="#questions">Questions</a> 
 
-  ## <h2 id="installation">Installation</h2>
+  ## <h2 id="installation">**Installation**</h2>
   ${installation} 
 
-  ## <h2 id="usage">Usage</h2>
+  ## <h2 id="usage">**Usage**</h2>
   ${usage} 
 
-  ## <h2 id="userLicense">License</h2>
-  ### NOTICE:
+  ## <h2 id="userLicense">**License**</h2>
+  ### <em>NOTICE</em>:
   This application is covered under the 
-  ${getLicense} license. 
+  ${userLicense} license.  
+  More info can be found here:
+  ${renderLicenseLink(userLicense)}
 
-  ## <h2 id="contributions">Contributions</h2>
-  ${contribution} 
+  ## <h2 id="contributions">**Contributions**</h2>
+  ${contributions} 
 
-  ## <h2 id="tests">Tests</h2>
-  
+  ## <h2 id="tests">**Tests**</h2>
+  ${testing} 
 
-  ## <h2 id="questions">Questions</h2>
+  ## <h2 id="questions">**Questions**</h2>
   For additional information please contact me via email: \n
   ${email} \n
   or visit my github page: \n

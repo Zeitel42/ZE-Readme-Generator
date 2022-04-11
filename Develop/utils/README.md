@@ -1,12 +1,12 @@
 
-  # Scarlet 
+  # **Ramble on Rose**
 
-  ![License: Unlicense](https://img.shields.io/badge/License-Unlicense-yellow.svg)
-  
-  ## Purpose
-  She had rings on her fingers 
+  ![License: LGPL](https://img.shields.io/badge/License-LGPL-yellow.svg)
+    
+  ## **Purpose**
+  Just like Jack the Ripper 
 
-  ## Table of Contents 
+  ## **Table of Contents** 
   <a href="#installation">Installation</a> 
 
   <a href="#usage">Usage</a> 
@@ -19,28 +19,30 @@
 
   <a href="#questions">Questions</a> 
 
-  ## <h2 id="installation">Installation</h2>
-  Bells on her shoes 
+  ## <h2 id="installation">**Installation**</h2>
+  Just like mojo hand 
 
-  ## <h2 id="usage">Usage</h2>
-  She was into the blues 
+  ## <h2 id="usage">**Usage**</h2>
+  Save the world 
 
-  ## <h2 id="userLicense">License</h2>
-  ### NOTICE:
+  ## <h2 id="userLicense">**License**</h2>
+  ### <em>NOTICE</em>:
   This application is covered under the 
-  Unlicense license. 
+  LGPL license.  
+  More info can be found here:
+  https://www.gnu.org/licenses/lgpl-3.0
 
-  ## <h2 id="contributions">Contributions</h2>
-  Visit my github via the link below. 
+  ## <h2 id="contributions">**Contributions**</h2>
+  You can contribute by.... 
 
-  ## <h2 id="tests">Tests</h2>
-  
+  ## <h2 id="tests">**Tests**</h2>
+  all the testing 
 
-  ## <h2 id="questions">Questions</h2>
+  ## <h2 id="questions">**Questions**</h2>
   For additional information please contact me via email: 
 
-  zac@mail.com 
+  jacktheripper@gmail.com 
 
   or visit my github page: 
 
-  https://github.com/Zeitel42  
+  https://github.com/ramblinRose  

@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+
 const inquirer = require("inquirer");
 
 const fs = require("fs");
@@ -135,28 +136,28 @@ const getUserInfo = () => {
     });
   });
 };
-getUserInfo();
+// getUserInfo();
 
 //////////////////////  MOCK DATA (don't forget to comment out) ////////////////////
-// const mockData = {
-//   title: "Ramble on Rose",
-//   description: "Just like Jack the Ripper",
-//   installation: "Just like mojo hand",
-//   usage: "Save the world",
-//   contributors: "Bob",
-//   userLicense: "mit",
-//   tests: "all the testing",
-//   github: "ramblinRose",
-//   email: "jacktheripper@gmail.com",
-// };
-// const data = generateData(mockData);
-// fs.writeFile("./utils/README.md", data, (err) => {
-//   if (err) throw new Error(err);
+const mockData = {
+  title: "Ramble on Rose",
+  description: "Just like Jack the Ripper",
+  installation: "Just like mojo hand",
+  usage: "Save the world",
+  contributions: "You can contribute by....",
+  userLicense: "LGPL",
+  testing: "all the testing",
+  github: "ramblinRose",
+  email: "jacktheripper@gmail.com",
+};
+const data = generateData(mockData);
+fs.writeFile("./utils/README.md", data, (err) => {
+  if (err) throw new Error(err);
 
-//   console.log(
-//     "Page created! Check out index.html in this directory to see it!"
-//   );
-// });
+  console.log(
+    "Page created! Check out index.html in this directory to see it!"
+  );
+});
 
 //////////////////////////////////////////////////////////////////
 // // TODO: Create a function to initialize app
