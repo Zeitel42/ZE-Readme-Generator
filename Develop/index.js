@@ -71,7 +71,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "contribution",
+    name: "contributions",
     message: "How to contribute?(Required)",
     validate: (nameInput) => {
       if (nameInput) {
@@ -84,7 +84,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "tests",
+    name: "testing",
     message: "Add testing instructions(Required)",
     validate: (nameInput) => {
       if (nameInput) {
@@ -130,38 +130,33 @@ const getUserInfo = () => {
   inquirer.prompt(questions).then((answers) => {
     fs.writeFile("./utils/README.md", generateData({ ...answers }), (err) => {
       if (err) throw new Error(err);
-      console.log(
-        "Page created! Check out index.html in this directory to see it!"
-      );
     });
   });
 };
-// getUserInfo();
 
 //////////////////////  MOCK DATA (don't forget to comment out) ////////////////////
-const mockData = {
-  title: "Ramble on Rose",
-  description: "Just like Jack the Ripper",
-  installation: "Just like mojo hand",
-  usage: "Save the world",
-  contributions: "You can contribute by....",
-  userLicense: "LGPL",
-  testing: "all the testing",
-  github: "ramblinRose",
-  email: "jacktheripper@gmail.com",
-};
-const data = generateData(mockData);
-fs.writeFile("./utils/README.md", data, (err) => {
-  if (err) throw new Error(err);
-
-  console.log(
-    "Page created! Check out index.html in this directory to see it!"
-  );
-});
+// const mockData = {
+//   title: "Ramble on Rose",
+//   description: "Just like Jack the Ripper",
+//   installation: "Just like mojo hand",
+//   usage: "Save the world",
+//   contributions: "You can contribute by....",
+//   userLicense: "LGPL",
+//   testing: "all the testing",
+//   github: "ramblinRose",
+//   email: "jacktheripper@gmail.com",
+// };
+// const data = generateData(mockData);
+// fs.writeFile("./utils/README.md", data, (err) => {
+//   if (err) throw new Error(err);
+//   console.log("page created");
+// });
 
 //////////////////////////////////////////////////////////////////
 // // TODO: Create a function to initialize app
-// function init() {}
+function init() {
+  getUserInfo();
+}
 
 // // Function call to initialize app
-// init();
+init();

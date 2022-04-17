@@ -8,13 +8,18 @@ const badges = [
 ];
 
 function renderLicenseBadge(license) {
-  return `![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)`;
+  if (license === "None") {
+    license = "";
+    return license;
+  } else {
+    return `![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)`;
+  }
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink;
-  console.log(license);
+  // console.log(license);
   switch (license) {
     case "Unlicense":
       licenseLink = "https://unlicense.org/";
@@ -33,14 +38,25 @@ function renderLicenseLink(license) {
   }
   return licenseLink;
 }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === "None") {
+    license = "";
+    return license;
+  } else {
+    return `
+  ## <h2 id="userLicense">**License**</h2>
+  ### <em>NOTICE</em>:
+  This application is covered under the 
+  ${license} license.  
+  More info can be found here:
+  ${renderLicenseLink(license)}
+    `;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 
-function generateOther(data) {
+function generateMarkdown(data) {
   const {
     title,
     description,
@@ -73,14 +89,9 @@ function generateOther(data) {
   ${installation} 
 
   ## <h2 id="usage">**Usage**</h2>
-  ${usage} 
+  ${usage}
 
-  ## <h2 id="userLicense">**License**</h2>
-  ### <em>NOTICE</em>:
-  This application is covered under the 
-  ${userLicense} license.  
-  More info can be found here:
-  ${renderLicenseLink(userLicense)}
+  ${renderLicenseSection(userLicense)}
 
   ## <h2 id="contributions">**Contributions**</h2>
   ${contributions} 
@@ -95,5 +106,7 @@ function generateOther(data) {
   https://github.com/${github}  
 `;
 }
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
 
-module.exports = generateOther;
+module.exports = generateMarkdown;
