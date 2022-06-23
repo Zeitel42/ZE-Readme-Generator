@@ -53,6 +53,14 @@ function renderLicenseSection(license) {
     `;
   }
 }
+function linkLicenseSection(license) {
+  if (license === "None") {
+    license = "";
+    return license;
+  } else {
+    return `<a href="#userLicense">License</a> \n`;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 
@@ -80,7 +88,7 @@ function generateMarkdown(data) {
   ## **Table of Contents** 
   <a href="#installation">Installation</a> \n
   <a href="#usage">Usage</a> \n
-  <a href="#userLicense">License</a> \n
+  ${linkLicenseSection(userLicense)}
   <a href="#contributions">Contributions</a> \n
   <a href="#tests">Tests</a> \n
   <a href="#questions">Questions</a> 

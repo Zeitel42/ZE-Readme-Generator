@@ -1,50 +1,56 @@
+# **ZE Social Media API**
 
-  # **Ramble on Rose**
+![License: Unlicense](https://img.shields.io/badge/License-Unlicense-yellow.svg)
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-    
-  ## **Purpose**
-  Just like jack the ripper 
+## **Purpose**
 
-  ## **Table of Contents** 
-  <a href="#installation">Installation</a> 
+A command line invoked api for a social media web app that allows users to create a friends list, share their thoughts, and react to friends thoughts.
 
-  <a href="#usage">Usage</a> 
+## **Table of Contents**
 
-  <a href="#userLicense">License</a> 
+<a href="#installation">Installation</a>
 
-  <a href="#contributions">Contributions</a> 
+<a href="#usage">Usage</a>
 
-  <a href="#tests">Tests</a> 
+<a href="#userLicense">License</a>
 
-  <a href="#questions">Questions</a> 
+<a href="#contributions">Contributions</a>
 
-  ## <h2 id="installation">**Installation**</h2>
-  installation instructions go here 
+<a href="#tests">Tests</a>
 
-  ## <h2 id="usage">**Usage**</h2>
-  save the world
+<a href="#questions">Questions</a>
 
-  
-  ## <h2 id="userLicense">**License**</h2>
-  ### <em>NOTICE</em>:
-  This application is covered under the 
-  MIT license.  
-  More info can be found here:
-  https://opensource.org/licenses/MIT
-    
+## <h2 id="installation">**Installation**</h2>
 
-  ## <h2 id="contributions">**Contributions**</h2>
-  af 
+User should clone Github repo and be familiar with Node, Express, Mongoose, and MongoDb.
 
-  ## <h2 id="tests">**Tests**</h2>
-  none 
+## <h2 id="usage">**Usage**</h2>
 
-  ## <h2 id="questions">**Questions**</h2>
-  For additional information please contact me via email: 
+App is invoked using command line command - npm start
 
-  zaceitel@mail.com 
+## <h2 id="userLicense">**License**</h2>
 
-  or visit my github page: 
+### <em>NOTICE</em>:
 
-  https://github.com/Zeitel42  
+This application is covered under the
+Unlicense license.  
+ More info can be found here:
+https://unlicense.org/
+
+## <h2 id="contributions">**Contributions**</h2>
+
+If you wish to contribute you may fork Github repo to add your unique twist.
+
+## <h2 id="tests">**Tests**</h2>
+
+If testing is required it could be done using Jest.
+
+## <h2 id="questions">**Questions**</h2>
+
+For additional information please contact me via email:
+
+zaceitel@gmail.com
+
+or visit my github page:
+
+https://github.com/Zeitel42

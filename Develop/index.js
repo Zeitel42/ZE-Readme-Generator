@@ -6,8 +6,6 @@ const fs = require("fs");
 
 const generateData = require("./utils/generateMarkdown");
 
-const { getuid } = require("process");
-
 // // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -77,7 +75,7 @@ const questions = [
       if (nameInput) {
         return true;
       } else {
-        console.log("who worked on this project?");
+        console.log("how does one contribute to this project?");
         return false;
       }
     },
